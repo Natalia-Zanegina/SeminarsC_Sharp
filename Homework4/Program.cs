@@ -30,7 +30,7 @@ Console.WriteLine($"{num1}^{num2} = {NumToPow(num1, num2)}");
 // Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // 1, 2, 5, 7, 19, 3, 44, 3 -> [1, 2, 5, 7, 19, 3, 44, 3]
 
-
+/*
 void NewArr()
 {
     int size = 8;
@@ -48,3 +48,4 @@ void NewArr()
     Console.Write($"{arr[length-1]}]");
 } 
 NewArr();
+*/

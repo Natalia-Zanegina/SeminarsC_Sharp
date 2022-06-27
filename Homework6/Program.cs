@@ -36,7 +36,7 @@ Console.WriteLine($"В массиве {GreaterThanZero(myArray)} чисел бо
 // Напишите программу, которая будет создавать копию заданного массива с помощью 
 // поэлементного копирования.
 
-
+/*
 int[] CopyArray(int[] array)
 {
     int[] newArray = new int[array.Length];
@@ -53,3 +53,4 @@ int[] copiedArray = CopyArray(myArray);
 Console.Write("Копия Вашего массива: ");
 for (int i = 0; i < copiedArray.Length; i++)
     Console.Write($"{copiedArray[i]} ");
+*/

@@ -72,7 +72,7 @@ ShowTwoDimArrayDouble(
 // 8 4 2 4
 // 1 7 -> такого числа в массиве нет
 
-
+/*
 string IfExists (int[,] array, int row, int column)
 {
     string result = string.Empty; 
@@ -90,7 +90,7 @@ Console.WriteLine("Введите номер столбца: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Значение элемента с индексом [{m},{n}]: {IfExists(myArray, m, n)}");
-
+*/
 
 
 // Задача 3.

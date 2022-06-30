@@ -102,26 +102,31 @@ Console.WriteLine($"Значение элемента с индексом [{m},{
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 /*
-string RowAverage(int[,] array)
+double[] RowAverage(int[,] array)
 {
-    string result = "Среднее арифметическое каждого столбца: ";
+    double[] result = new double[array.GetLength(1)];
 
     for (int i = 0; i < array.GetLength(1); i++)
     {
         double count = 0, sum = 0;
-        double average = 0;
         for (int j = 0; j < array.GetLength(0); j++)
         {
             sum += array[j,i];
             count++;
         }
-        average = Math.Round(sum / count, 1);
-        result += (average + " ");  
+        result[i] = Math.Round(sum / count, 1);
+        
     }
     return result;
 
 }
 
 int[,] myArray = CreateRandomTwoDimArray(3,4,1,9);
-Console.WriteLine(RowAverage(myArray));
+double[] averages = RowAverage(myArray);
+
+Console.Write("Среднее арифметическое каждого столбца: ");
+int lastRow = averages.Length - 1;
+for (int i = 0; i < lastRow; i++)
+    Console.Write($"{averages[i]}; ");
+Console.WriteLine($"{averages[lastRow]}.");
 */

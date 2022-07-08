@@ -4,29 +4,20 @@
 // M = 4; N = 8. -> 30
 
 /*
-int SumOfNaturalElements(int m, int n)
+int SumOfNaturalElements(int min, int max)
 {
-    if(m < 0) m = 0;
-    if(n < 0) n = 0;
-    if(m < n)
-    {
-        if(m < n) return m + SumOfNaturalElements(m + 1, n);
-        else return n;
-    }
-    else
-    {
-        if(n < m) return n + SumOfNaturalElements(m, n + 1);
-        else return m; 
-    }
+    if(min < 0) min = 1;
+    if(min < max) return min + SumOfNaturalElements(min + 1, max);
+        else return max;
 }
 
-Console.WriteLine("Input first integer number: ");
+Console.WriteLine("Input minimal integer number: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Input second integer number: ");
+Console.WriteLine("Input maximal integer number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"The sum of natural elements in the interval from {m} to {n} is equal to {SumOfNaturalElements(m,n)}");
+Console.WriteLine($"The sum of natural elements in the range from {m} to {n} is equal to {SumOfNaturalElements(m,n)}");
 */
 
 // Задача 2. Напишите программу, которая будет принимать на вход число и возвращать кол-во его цифр.

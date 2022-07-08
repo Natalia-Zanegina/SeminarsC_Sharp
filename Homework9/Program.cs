@@ -26,7 +26,7 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input second integer number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(SumOfNaturalElements(m,n));
+Console.WriteLine($"The sum of natural elements in the interval from {m} to {n} is equal to {SumOfNaturalElements(m,n)}");
 */
 
 // Задача 2. Напишите программу, которая будет принимать на вход число и возвращать кол-во его цифр.
@@ -43,5 +43,8 @@ int CountOfDigits(int num)
 Console.WriteLine("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(CountOfDigits(num));
+int result = CountOfDigits(num);
+if (result == 1)
+    Console.WriteLine($"There is {result} digit in the number {num}");
+else Console.WriteLine($"There are {result} digits in the number {num}");
 */
